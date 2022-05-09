@@ -33,7 +33,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>120</y>
+      <y>20</y>
       <width>41</width>
       <height>21</height>
      </rect>
@@ -51,7 +51,7 @@
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>120</y>
+      <y>20</y>
       <width>41</width>
       <height>21</height>
      </rect>
@@ -68,34 +68,8 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>30</y>
-      <width>361</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string>Монитор ресурсов</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="text">
-        <string>Монитор процессов</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
       <x>20</x>
-      <y>150</y>
+      <y>50</y>
       <width>156</width>
       <height>15</height>
      </rect>
@@ -121,7 +95,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>170</y>
+      <y>70</y>
       <width>101</width>
       <height>15</height>
      </rect>
@@ -147,7 +121,7 @@
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>170</y>
+      <y>70</y>
       <width>107</width>
       <height>15</height>
      </rect>
@@ -167,13 +141,20 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Гб</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>150</y>
+      <y>50</y>
       <width>111</width>
       <height>16</height>
      </rect>
@@ -193,15 +174,22 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Гб</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>170</y>
-      <width>102</width>
-      <height>15</height>
+      <y>70</y>
+      <width>91</width>
+      <height>16</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -219,13 +207,20 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>Гб</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QLabel" name="label_cpu_percent">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>120</y>
+      <x>60</x>
+      <y>20</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -242,8 +237,8 @@
    <widget class="QLabel" name="label_memory_percent">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>120</y>
+      <x>280</x>
+      <y>20</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -257,24 +252,11 @@
      <string/>
     </property>
    </widget>
-   <widget class="Line" name="line">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>80</y>
-      <width>481</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
    <widget class="Line" name="line_2">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>350</y>
+      <y>250</y>
       <width>481</width>
       <height>20</height>
      </rect>
@@ -287,7 +269,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>390</y>
+      <y>280</y>
       <width>41</width>
       <height>21</height>
      </rect>
@@ -305,7 +287,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>470</y>
+      <y>360</y>
       <width>41</width>
       <height>21</height>
      </rect>
@@ -323,7 +305,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>430</y>
+      <y>320</y>
       <width>230</width>
       <height>15</height>
      </rect>
@@ -343,13 +325,20 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>Гб</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>510</y>
+      <y>400</y>
       <width>109</width>
       <height>15</height>
      </rect>
@@ -374,8 +363,8 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>151</x>
-      <y>510</y>
+      <x>180</x>
+      <y>400</y>
       <width>121</width>
       <height>16</height>
      </rect>
@@ -401,7 +390,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>210</y>
+      <y>110</y>
       <width>211</width>
       <height>131</height>
      </rect>
@@ -411,7 +400,76 @@
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>210</y>
+      <y>110</y>
+      <width>211</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cpu_4">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cpu_5">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>70</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Мгц</string>
+    </property>
+   </widget>
+   <widget class="PlotWidget" name="widget_sent" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>211</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="PlotWidget" name="widget_recv" native="true">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>430</y>
       <width>211</width>
       <height>131</height>
      </rect>
@@ -428,838 +486,5 @@
   </customwidget>
  </customwidgets>
  <resources/>
- <connections>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>148</x>
-     <y>44</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>36</x>
-     <y>161</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu_count</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>163</x>
-     <y>48</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>174</x>
-     <y>158</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu_freq</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>205</x>
-     <y>41</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>119</x>
-     <y>180</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_3</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>176</x>
-     <y>45</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>35</x>
-     <y>181</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu_count</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>419</x>
-     <y>46</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>174</x>
-     <y>159</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu_freq</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>419</x>
-     <y>40</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>119</x>
-     <y>183</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>419</x>
-     <y>41</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>84</x>
-     <y>162</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_3</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>419</x>
-     <y>42</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>59</x>
-     <y>183</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>122</x>
-     <y>46</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>37</x>
-     <y>126</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_memory</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>176</x>
-     <y>43</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>200</x>
-     <y>140</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>419</x>
-     <y>48</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>60</x>
-     <y>137</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_memory</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>419</x>
-     <y>42</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>200</x>
-     <y>140</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_7</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>123</x>
-     <y>45</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>231</x>
-     <y>183</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_memory_free</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>177</x>
-     <y>46</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>322</x>
-     <y>183</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_memory_total</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>220</x>
-     <y>50</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>339</x>
-     <y>164</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_9</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>155</x>
-     <y>45</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>231</x>
-     <y>164</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_7</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>419</x>
-     <y>44</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>231</x>
-     <y>183</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_memory_free</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>419</x>
-     <y>42</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>322</x>
-     <y>183</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_9</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>419</x>
-     <y>47</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>231</x>
-     <y>164</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_memory_total</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>419</x>
-     <y>43</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>339</x>
-     <y>164</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_11</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>115</x>
-     <y>49</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>352</x>
-     <y>180</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_memory_used</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>135</x>
-     <y>45</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>450</x>
-     <y>182</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_11</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>325</x>
-     <y>42</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>351</x>
-     <y>180</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_memory_used</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>405</x>
-     <y>42</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>409</x>
-     <y>178</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu_2</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>97</x>
-     <y>36</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>48</x>
-     <y>288</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_2</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>83</x>
-     <y>34</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>70</x>
-     <y>431</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_disk_usage</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>89</x>
-     <y>31</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>248</x>
-     <y>431</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu_3</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>186</x>
-     <y>48</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>47</x>
-     <y>379</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_5</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>199</x>
-     <y>47</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>73</x>
-     <y>511</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_net_sent</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>200</x>
-     <y>37</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>127</x>
-     <y>511</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_6</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>163</x>
-     <y>40</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>172</x>
-     <y>511</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_net_recv</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>217</x>
-     <y>44</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>270</x>
-     <y>511</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>line</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>103</x>
-     <y>36</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>89</x>
-     <y>95</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>line_2</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>138</x>
-     <y>46</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>129</x>
-     <y>249</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>line</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>313</x>
-     <y>37</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>305</x>
-     <y>84</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>line_2</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>368</x>
-     <y>47</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>264</x>
-     <y>251</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu_2</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>357</x>
-     <y>39</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>51</x>
-     <y>289</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_2</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>388</x>
-     <y>39</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>124</x>
-     <y>431</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_disk_usage</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>326</x>
-     <y>45</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>248</x>
-     <y>431</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu_3</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>322</x>
-     <y>43</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>53</x>
-     <y>377</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_5</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>370</x>
-     <y>37</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>59</x>
-     <y>511</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_net_sent</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>334</x>
-     <y>39</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>127</x>
-     <y>511</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_6</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>373</x>
-     <y>45</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>199</x>
-     <y>511</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_net_recv</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>374</x>
-     <y>35</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>270</x>
-     <y>511</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu_percent</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>140</x>
-     <y>38</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>112</x>
-     <y>135</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>label_memory_percent</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>196</x>
-     <y>49</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>267</x>
-     <y>133</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_cpu_percent</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>321</x>
-     <y>43</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>128</x>
-     <y>137</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>label_memory_percent</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>303</x>
-     <y>50</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>321</x>
-     <y>137</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>widget_cpu</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>143</x>
-     <y>44</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>128</x>
-     <y>252</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>widget_ram</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>138</x>
-     <y>40</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>316</x>
-     <y>241</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>widget_cpu</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>347</x>
-     <y>37</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>184</x>
-     <y>222</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_2</sender>
-   <signal>clicked()</signal>
-   <receiver>widget_ram</receiver>
-   <slot>hide()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>357</x>
-     <y>42</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>365</x>
-     <y>226</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
