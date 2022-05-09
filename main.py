@@ -1,4 +1,4 @@
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtGui
 from PyQt5.QtCore import QTimer
 from app import Ui_MainWindow
 import collections
@@ -85,6 +85,20 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ram_y = collections.deque(np.zeros(10))
         self.ram_pen = pg.mkPen(color=(255, 0, 0), width=2)
 
+        self.sent_plot = self.ui.widget_sent
+        self.sent_plot.getPlotItem().hideAxis('bottom')
+        self.sent_plot.getPlotItem().hideAxis('left')
+        self.sent_x = list(range(10))
+        self.sent_y = collections.deque(np.zeros(10))
+        self.sent_pen = pg.mkPen(color=(255, 0, 0), width=2)
+
+        self.recv_plot = self.ui.widget_recv
+        self.recv_plot.getPlotItem().hideAxis('bottom')
+        self.recv_plot.getPlotItem().hideAxis('left')
+        self.recv_x = list(range(10))
+        self.recv_y = collections.deque(np.zeros(10))
+        self.recv_pen = pg.mkPen(color=(255, 0, 0), width=2)
+
     def draw(self):
         self.cpu_y.popleft()
         self.cpu_y.append(self.data.cpu_percent())
@@ -104,6 +118,24 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ram_x.append(self.ram_x[-1] + 1)
         self.ram_plot.plot(self.ram_x, self.ram_y, pen=self.ram_pen)
 
+        self.sent_y.popleft()
+        self.sent_y.append(self.data.memory_percent())
+        self.sent_plot.clear()
+        self.sent_plot.showGrid(x=True, y=True)
+        self.sent_plot.setYRange(0, 120, padding=0)
+        self.sent_x = self.sent_x[1:]
+        self.sent_x.append(self.sent_x[-1] + 1)
+        self.sent_plot.plot(self.sent_x, self.sent_y, pen=self.sent_pen)
+
+        self.recv_y.popleft()
+        self.recv_y.append(self.data.memory_percent())
+        self.recv_plot.clear()
+        self.recv_plot.showGrid(x=True, y=True)
+        self.recv_plot.setYRange(0, 80, padding=0)
+        self.recv_x = self.recv_x[1:]
+        self.recv_x.append(self.recv_x[-1] + 1)
+        self.recv_plot.plot(self.recv_x, self.recv_y, pen=self.recv_pen)
+
     def timer(self):
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.fill)
@@ -114,8 +146,10 @@ class MyWindow(QtWidgets.QMainWindow):
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
     application = MyWindow()
+    application.setWindowTitle('System Monitor')
+    application.setWindowIcon(QtGui.QIcon('icon.png'))
     application.show()
- 
+    
     application.fill()
     application.initDraw()
     application.draw()
